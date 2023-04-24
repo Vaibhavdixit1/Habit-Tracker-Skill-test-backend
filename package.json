@@ -4,7 +4,9 @@
   "description": "Here is my project for habit tracking",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "build": "netlify deploy --proud"
   },
   "author": "Vaibhavdixit_shyam",
   "license": "ISC",
@@ -14,6 +16,10 @@
     "express": "^4.18.2",
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.17.3",
-    "mongoose": "^5.10.0"
+    "mongoose": "^5.10.0",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^2.0.16"
   }
 }
